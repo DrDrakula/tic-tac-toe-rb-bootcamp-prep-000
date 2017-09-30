@@ -105,6 +105,5 @@ def play(board)
     # else
     #   winner(board)
     #   break
-    end
   end
 end
