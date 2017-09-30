@@ -102,8 +102,9 @@ def play(board)
     if !(over?(board))
       turn(board)
       counter++
-    # else
-    #   winner(board)
-    #   break
+    else
+      winner(board)
+      break
+    end
   end
 end
