@@ -101,7 +101,7 @@ def play(board)
   until counter == 9
     if !(over?(board))
       turn(board)
-      counter++
+      counter+= 1
     else
       winner(board)
       break
