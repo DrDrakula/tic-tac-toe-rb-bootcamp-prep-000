@@ -104,7 +104,7 @@ def play(board)
       counter+= 1
     elsif won?(board)
       winner(board)
-      return "Congradulations #{winner(board)}!"
+      puts "Congradulations #{winner(board)}!"
       break
     end
   end
