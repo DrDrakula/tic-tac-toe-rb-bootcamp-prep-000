@@ -96,14 +96,14 @@ end
 
 def play(board)
   counter = 0
-  until counter == 7
-    if !(over?(board))
-      turn(board)
-      counter+= 1
-    else
-      break
-    end
-  end
+  # until counter == 7
+  #   if !(over?(board))
+  #     turn(board)
+  #     counter+= 1
+  #   else
+  #     break
+  #   end
+  # end
   if won?(board)
     return "Congradulations #{winner(board)}!"
   end
