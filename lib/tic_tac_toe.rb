@@ -66,7 +66,6 @@ def valid_move?(board, position)
 end
 
 def turn(board)
-  puts "Choose your position: "
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board,index) == true
