@@ -108,4 +108,5 @@ def play(board)
   end
   if won?(board)
     puts "Congradulations #{winner(board)}!"
+  end
 end
