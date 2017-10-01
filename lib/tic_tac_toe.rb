@@ -101,7 +101,7 @@ def play(board)
     counter += 1
 
     if over?(board)
-      breaks
+      break
     # if !(over?(board))
     #   turn(board)
     #   counter+= 1
@@ -109,7 +109,7 @@ def play(board)
     #   break
     # end
   end
-  
+
   if draw?(board)
     puts "Cat's Game!"
   end
