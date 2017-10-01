@@ -102,6 +102,7 @@ def play(board)
 
     if over?(board)
       break
+    end
     # if !(over?(board))
     #   turn(board)
     #   counter+= 1
