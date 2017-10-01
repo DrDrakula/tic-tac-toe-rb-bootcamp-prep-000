@@ -103,7 +103,8 @@ def play(board)
     # else
     #   break
     elsif won?(board)
-      return "Congradulation #{winner(board)}!"
+      puts "Congradulation #{winner(board)}!"
+      break
     end
   end
 
