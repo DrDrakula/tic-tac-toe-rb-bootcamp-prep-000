@@ -96,7 +96,7 @@ end
 
 def play(board)
   counter = 0
-  until counter == 8
+  until counter == 7
     if !(over?(board))
       turn(board)
       counter+= 1
