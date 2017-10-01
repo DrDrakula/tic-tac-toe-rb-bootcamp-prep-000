@@ -71,6 +71,9 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board,index) == true
     move(board,index,current_player(board))
+    if won?(board)
+      return "Congradulations #{winner(board)}!"
+    end
   else
     turn(board)
   end
