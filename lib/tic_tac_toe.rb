@@ -97,12 +97,9 @@ end
 def play(board)
   counter = 0
   until counter == 9
-    if won?(board)
-      puts "Congradulations #{winner(board)}!"
-      break
-    # if !(over?(board))
-    #   turn(board)
-    #   counter+= 1
+    if !(over?(board))
+      turn(board)
+      counter+= 1
     else
       break
     end
