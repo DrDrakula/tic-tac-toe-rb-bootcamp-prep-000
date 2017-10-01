@@ -102,6 +102,7 @@ def play(board)
     if !(over?(board))
       if won?(board)
         return "Congradulations #{winner(board)}!"
+      end
       counter+= 1
     else
       break
