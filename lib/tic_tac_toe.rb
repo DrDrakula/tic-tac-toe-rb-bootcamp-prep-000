@@ -99,7 +99,9 @@ def play(board)
   until counter == 8
     if !(over?(board))
       turn(board)
-      draw?(board)
+      if draw?(board)
+        break
+      end
       counter+= 1
     else
       if won?(board)
