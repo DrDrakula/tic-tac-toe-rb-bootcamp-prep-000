@@ -100,13 +100,13 @@ def play(board)
     if !(over?(board))
       turn(board)
       counter+= 1
+    elsif won?(board)
+      return "Congradulations #{winner(board)}!"
     else
       break
     end
   end
-  if won?(board)
-    return "Congradulations #{winner(board)}!"
-  end
+  
   if draw?(board)
     puts "Cat's Game!"
   end
