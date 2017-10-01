@@ -103,7 +103,8 @@ def play(board)
       turn(board)
       counter+= 1
     elsif won?(board)
-      return "Congradulations #{winner(board)!}"
+      winner(board)
+      return "Congradulations #{winner(board)}!"
       break
     end
   end
