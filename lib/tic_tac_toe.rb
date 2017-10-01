@@ -112,5 +112,9 @@ end
 #   end
 # end
 def play(board)
-  turn(board)
+  count = 0
+  if count < 8
+    turn(board)
+    count += 1
+  end
 end
