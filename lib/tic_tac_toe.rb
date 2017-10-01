@@ -97,16 +97,19 @@ end
 def play(board)
   counter = 0
   until counter == 8
-    if !(over?(board))
-      turn(board)
-      counter+= 1
-    elsif won?(board) == true
-      return "Congradulations #{winner(board)}!"
-    else
-      break
-    end
-  end
+    turn(board)
+    counter += 1
 
+    if over?(board)
+      breaks
+    # if !(over?(board))
+    #   turn(board)
+    #   counter+= 1
+    # else
+    #   break
+    # end
+  end
+  
   if draw?(board)
     puts "Cat's Game!"
   end
