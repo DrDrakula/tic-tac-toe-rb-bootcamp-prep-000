@@ -100,8 +100,10 @@ def play(board)
     if !(over?(board))
       turn(board)
       counter+= 1
-    else
-      break
+    # else
+    #   break
+    elsif won?(board)
+      return "Congradulation #{winner(board)}!"
     end
   end
 
