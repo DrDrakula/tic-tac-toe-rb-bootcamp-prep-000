@@ -100,15 +100,12 @@ def play(board)
     turn(board)
     counter += 1
 
-    if over?(board)
+    if !(over?(board))
+      turn(board)
+      counter+= 1
+    else
       break
     end
-    # if !(over?(board))
-    #   turn(board)
-    #   counter+= 1
-    # else
-    #   break
-    # end
   end
 
   if draw?(board)
