@@ -102,14 +102,14 @@ def play(board)
     if !(over?(board))
       turn(board)
       counter+= 1
-      if won?(board)
-        puts "Congradulations #{winner(board)}!"
-      end
     else
       break
     end
   end
-    if draw?(board)
+  if won?(board)
+    puts "Congradulations #{winner(board)}!"
+  end
+  if draw?(board)
     puts "Cat's Game!"
   end
 end
