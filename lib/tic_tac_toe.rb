@@ -115,7 +115,6 @@ def play(board)
   count = 0
   while count < 9
     turn(board)
-    over?(board)
     count += 1
   end
 end
