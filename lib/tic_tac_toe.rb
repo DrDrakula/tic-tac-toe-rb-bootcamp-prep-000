@@ -94,20 +94,23 @@ def current_player(board)
   end
 end
 
+# def play(board)
+#   counter = 0
+#   until counter == 9
+#     if !(over?(board))
+#       turn(board)
+#       counter+= 1
+#     else
+#       break
+#     end
+#   end
+#   if won?(board)
+#     return "Congradulations #{winner(board)}!"
+#   end
+#   if draw?(board)
+#     puts "Cat's Game!"
+#   end
+# end
 def play(board)
-  counter = 0
-  until counter == 9
-    if !(over?(board))
-      turn(board)
-      counter+= 1
-    else
-      break
-    end
-  end
-  if won?(board)
-    return "Congradulations #{winner(board)}!"
-  end
-  if draw?(board)
-    puts "Cat's Game!"
-  end
+
 end
