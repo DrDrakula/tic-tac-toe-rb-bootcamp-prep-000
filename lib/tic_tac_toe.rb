@@ -113,7 +113,7 @@ end
 # end
 def play(board)
   count = 0
-  if count < 8
+  while count < 8
     turn(board)
     over?(board)
     count += 1
