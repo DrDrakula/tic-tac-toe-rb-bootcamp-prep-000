@@ -103,8 +103,10 @@ def play(board)
       turn(board)
       counter+= 1
     else
-      winner(board)
-      puts "Congradulations #{winner(board)}!"
+      if won?(board)
+        winner(board)
+        puts "Congradulations #{winner(board)}!"
+      end
       break
     end
   end
