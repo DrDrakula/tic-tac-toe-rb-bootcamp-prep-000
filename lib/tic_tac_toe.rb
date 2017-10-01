@@ -115,6 +115,7 @@ def play(board)
   count = 0
   if count < 8
     turn(board)
+    over?(board)
     count += 1
   end
 end
