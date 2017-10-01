@@ -112,6 +112,5 @@ end
 #   end
 # end
 def play(board)
-  input = gets.strip
   
 end
